@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>this tools fetches assets from inventory to be assigned to user</description>
+        <input_schema>[]</input_schema>
+        <name>Guardian Fetch Asset from Inventory</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var assetGr = new GlideRecordSecure('x_aleen_snguardian_asset');
+    assetGr.addQuery('status.code',"UNASSIGNED");
+    assetGr.query();
+    if(assetGr.next()){
+        return assetGr.getValue('sys_id');
+    }else{
+        return null;
+    }
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 09:52:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b4abe14d3b18cb507999faac73e45ab0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Fetch Asset from Inventory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_tool_b4abe14d3b18cb507999faac73e45ab0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 09:52:11</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

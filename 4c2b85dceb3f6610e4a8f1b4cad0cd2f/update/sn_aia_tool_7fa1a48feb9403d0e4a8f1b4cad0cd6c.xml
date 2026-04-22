@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Guardian AI Agent Self Service Register Visit</description>
+        <input_schema>[]</input_schema>
+        <name>Guardian AI Agent Self Service Register Visit</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    try{
+        var userGr = new GlideRecordSecure('x_aleen_snguardian_identity');
+        userGr.addQuery('email', inputs.user_email);
+        userGr.query();
+        if (userGr.next()) {
+            var idenLocationGr = new GlideRecordSecure('x_aleen_snguardian_identity_location');
+            idenLocationGr.addQuery('identity', userGr.getValue('sys_id'));
+            idenLocationGr.query();
+            if(idenLocationGr.next()){
+                return {
+                    "identityId": userGr.getValue('sys_id'),
+                    "location": idenLocationGr.getValue('location'),
+                    "location_name": idenLocationGr.getDisplayValue('location')
+                };
+            }else{
+                return JSON.stringify({
+                "success": false,
+                "identityId": userGr.getValue('sys_id'),
+                "message": "User Location not found"
+            });
+            }
+        } else {
+            return JSON.stringify({
+                "success": false,
+                "message": "User not found"
+            });
+        }
+    }catch(err){
+        gs.info("Eror in Fetching identity: "+err.message);
+    }
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 09:36:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7fa1a48feb9403d0e4a8f1b4cad0cd6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian AI Agent Self Service Register Visit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_tool_7fa1a48feb9403d0e4a8f1b4cad0cd6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 09:36:56</sys_updated_on>
+        <target_document>c4595c87eb5403d0e4a8f1b4cad0cd4d</target_document>
+        <target_document_table>sys_hub_flow</target_document_table>
+        <type>subflow</type>
+    </sn_aia_tool>
+</record_update>

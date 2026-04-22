@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_config">
+    <sn_aia_agent_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Guardian Self Service Reset Pin Agent">091fef6d3b1803907999faac73e45a9b</agent>
+        <agent_descriptor/>
+        <agent_learning>false</agent_learning>
+        <doc_url/>
+        <icon_url/>
+        <public>false</public>
+        <run_as_user/>
+        <specialist_enabled>false</specialist_enabled>
+        <sys_class_name>sn_aia_agent_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 08:46:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>23af6bed3b1803907999faac73e45a1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_agent_config_23af6bed3b1803907999faac73e45a1e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 08:46:03</sys_updated_on>
+    </sn_aia_agent_config>
+</record_update>

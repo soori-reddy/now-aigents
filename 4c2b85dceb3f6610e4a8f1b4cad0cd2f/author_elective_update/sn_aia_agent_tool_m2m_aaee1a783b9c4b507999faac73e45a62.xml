@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent>
+        <description>Guardian Replace Badge Self Service - Delete old Identity Asset and Assign new Identity asset</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>947464383bdc0b507999faac73e45afc</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"old_asset","value":"","description":"selected badge by user from list of assets to be removed as a part of replacement","mandatory":false},{"name":"identity_id","value":"","description":"sys id of user for which action to be performed","mandatory":false},{"name":"valid_till","value":"","description":"validity dates of new asset to be assigned","mandatory":false}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Guardian Replace Badge Self Service</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 18:57:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aaee1a783b9c4b507999faac73e45a62</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Guardian Replace Badge Self Service</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_aaee1a783b9c4b507999faac73e45a62</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 09:18:42</sys_updated_on>
+        <timeout/>
+        <tool display_value="Guardian Replace Badge Self Service">6aee1a783b9c4b507999faac73e45a50</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sn_aia_agent_tool_m2m_aaee1a783b9c4b507999faac73e45a62</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent><description>Guardian Replace Badge Self Service - Delete old Identity Asset and Assign new Identity asset</description><display_mode>inline</display_mode><display_output>true</display_output><document_status/><entity>sn_aia_agent</entity><entity_id>947464383bdc0b507999faac73e45afc</entity_id><execution_mode>autopilot</execution_mode><inputs>[{"name":"old_asset","value":"","description":"selected badge by user from list of assets to be removed as a part of replacement","mandatory":false},{"name":"identity_id","value":"","description":"sys id of user for which action to be performed","mandatory":false},{"name":"valid_till","value":"","description":"validity dates of new asset to be assigned","mandatory":false}]</inputs><max_auto_executions>10</max_auto_executions><name>Guardian Replace Badge Self Service</name><output_transformation_strategy>none</output_transformation_strategy><post_message/><post_processing_script/><pre_message/><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-14 18:57:44</sys_created_on><sys_domain>global</sys_domain><sys_id>aaee1a783b9c4b507999faac73e45a62</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Guardian Replace Badge Self Service</sys_name><sys_overrides/><sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package><sys_policy/><sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_aaee1a783b9c4b507999faac73e45a62</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 09:18:42</sys_updated_on><timeout/><tool display_value="Guardian Replace Badge Self Service">6aee1a783b9c4b507999faac73e45a50</tool><tool_attributes>{}</tool_attributes><transformation_instructions/><widgets>db0e858eff62b210f465ffffffffff2c</widgets></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>1891517157</payload_hash>
+        <record_name>Guardian Replace Badge Self Service</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 09:18:43</sys_created_on>
+        <sys_id>6ef3698d3bd4cb507999faac73e45a93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d906f8d830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 09:18:43</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>6ef3698d9cd4cb5074ff0ce079785e92</update_guid>
+        <update_guid_history>6ef3698d9cd4cb5074ff0ce079785e92:1891517157,b64c998dcc94cb5024f37e2942b8cdf1:-826074660,7b333c0d8f10cb50c93e1b7979a18532:-203954332,eaee1a78a29c4b50beb859f8ae6d9967:387496255</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Guardian Replace Badge Self Service">a07ae1573b184f907999faac73e45ab0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 09:33:18</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>0ccff6a3ea4f45bb93183f95fd4d2971</sys_id>
+        <sys_metadata>aaee1a783b9c4b507999faac73e45a62</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Replace Badge Self Service</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_aaee1a783b9c4b507999faac73e45a62</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_aaee1a783b9c4b507999faac73e45a62">6ef3698d3bd4cb507999faac73e45a93</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:33:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

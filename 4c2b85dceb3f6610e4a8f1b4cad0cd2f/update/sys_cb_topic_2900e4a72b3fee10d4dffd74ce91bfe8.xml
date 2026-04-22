@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>This topic block is designed to identify whether a user exists within the system. If the user is found, it returns the relevant user details, including their unique identifier.
+
+We use this block to provide flexibility in handling user data—whether through direct record lookup, invoking a skill, or triggering a sub flow for real-time integrations when needed.</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "873db8fa26ad4d9a8ecc32d3c3e226f6": {
+          "id": "873db8fa26ad4d9a8ecc32d3c3e226f6",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "😊 Please wait while we securely retrieve user details...."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "parameters": [
+            {
+              "type": "String",
+              "value": "",
+              "id": "609743e663684bc486f96826fa75c6a7",
+              "name": "user_email",
+              "required": true,
+              "hint": "User Email",
+              "referenced": true,
+              "disabled": true
+            }
+          ],
+          "variableIds": [
+            "609743e663684bc486f96826fa75c6a7"
+          ]
+        },
+        "b8f27cef568f48cf8f1ea8206adfc78d": {
+          "id": "b8f27cef568f48cf8f1ea8206adfc78d",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "✅ User details check completed"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "outputVariables": [
+            {
+              "key": "Guardian_Identity_GR",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.guardian_user_sys_id}}",
+                        "displayValue": "Script Variables➛guardian_user_sys_id"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": true,
+              "cannotBeDeleted": true,
+              "alertMessage": "You cannot delete this parameter because other calling topics use it.",
+              "additionalInfoUrl": "/sys_cs_topic_library_usage_list.do?sysparm_query=library_cs_topic_id=64f7a8e72b7fee10d4dffd74ce91bf83%5Ecalling_cs_topic_idINc53243723b3f62507999faac73e45a14",
+              "additionalInfoLabel": "See calling topics"
+            },
+            {
+              "key": "Guardian_User_Name",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.user_name}}",
+                        "displayValue": "Script Variables➛user_name"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": true,
+              "cannotBeDeleted": true,
+              "alertMessage": "You cannot delete this parameter because other calling topics use it.",
+              "additionalInfoUrl": "/sys_cs_topic_library_usage_list.do?sysparm_query=library_cs_topic_id=64f7a8e72b7fee10d4dffd74ce91bf83%5Ecalling_cs_topic_idINc53243723b3f62507999faac73e45a14",
+              "additionalInfoLabel": "See calling topics"
+            },
+            {
+              "key": "Guardian_User_Type",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.user_type}}",
+                        "displayValue": "Script Variables➛user_type"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": true,
+              "cannotBeDeleted": true,
+              "alertMessage": "You cannot delete this parameter because other calling topics use it.",
+              "additionalInfoUrl": "/sys_cs_topic_library_usage_list.do?sysparm_query=library_cs_topic_id=64f7a8e72b7fee10d4dffd74ce91bf83%5Ecalling_cs_topic_idINc53243723b3f62507999faac73e45a14",
+              "additionalInfoLabel": "See calling topics"
+            },
+            {
+              "key": "Guardian_User_Status",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.user_status}}",
+                        "displayValue": "Script Variables➛user_status"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": true,
+              "cannotBeDeleted": true,
+              "alertMessage": "You cannot delete this parameter because other calling topics use it.",
+              "additionalInfoUrl": "/sys_cs_topic_library_usage_list.do?sysparm_query=library_cs_topic_id=64f7a8e72b7fee10d4dffd74ce91bf83%5Ecalling_cs_topic_idINc53243723b3f62507999faac73e45a14",
+              "additionalInfoLabel": "See calling topics"
+            },
+            {
+              "key": "Guardian_User_Photo",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.user_photo}}",
+                        "displayValue": "Script Variables➛user_photo"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": true,
+              "cannotBeDeleted": true,
+              "alertMessage": "You cannot delete this parameter because other calling topics use it.",
+              "additionalInfoUrl": "/sys_cs_topic_library_usage_list.do?sysparm_query=library_cs_topic_id=64f7a8e72b7fee10d4dffd74ce91bf83%5Ecalling_cs_topic_idINc53243723b3f62507999faac73e45a14",
+              "additionalInfoLabel": "See calling topics"
+            },
+            {
+              "key": "Guardian_User_Number",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.user_number}}",
+                        "displayValue": "Script Variables➛user_number"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": true,
+              "cannotBeDeleted": true,
+              "alertMessage": "You cannot delete this parameter because other calling topics use it.",
+              "additionalInfoUrl": "/sys_cs_topic_library_usage_list.do?sysparm_query=library_cs_topic_id=64f7a8e72b7fee10d4dffd74ce91bf83%5Ecalling_cs_topic_idINc53243723b3f62507999faac73e45a14",
+              "additionalInfoLabel": "See calling topics"
+            },
+            {
+              "key": "Guardian_user_type_sys_id",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.user_type_sys_id}}",
+                        "displayValue": "Script Variables➛user_type_sys_id"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": false
+            }
+          ]
+        },
+        "f82185e9de674056baf341ae59029d45": {
+          "id": "f82185e9de674056baf341ae59029d45",
+          "name": "User Lookup",
+          "script": "(function execute() {\n   \n        var identityGr = new GlideRecordSecure(\"x_aleen_snguardian_identity\");\n        identityGr.addQuery('email', vaInputs.user_email);\n        identityGr.addQuery('is_deleted', false);\n        identityGr.query();\n        if (identityGr.next()) {\n            var user_type = identityGr.type.code;\n            vaVars.guardian_user_sys_id = identityGr.sys_id.toString();\n            vaVars.user_name = identityGr.full_name.toString();\n            vaVars.user_photo = identityGr.photo.toString();\n            vaVars.user_type = identityGr.type.name.toString();\n            vaVars.user_type_sys_id = identityGr.type.toString();\n            if (user_type == 'VISITOR') {\n                var visitorGr = new GlideRecordSecure(\"x_aleen_snguardian_visitor\");\n                if (visitorGr.get(identityGr.sys_id)) {\n                   vaVars.user_status = visitorGr.visitor_status.name.toString();\n                   vaVars.user_number = visitorGr.number.toString();\n                }\n            } else {\n                vaVars.user_status = identityGr.status.name.toString();\n                vaVars.user_number = identityGr.number.toString();\n            }\n        } else {\n            vaVars.guardian_user_sys_id = '';\n            vaVars.user_name = '';\n            vaVars.user_photo = '';\n            vaVars.user_type = '';\n            vaVars.user_status = '';\n            vaVars.user_number = '';\n            vaVars.user_type_sys_id ='';\n        }\n     \n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "6e3ec3ce6cb745649e78f685ea952f42",
+          "edgeType": "Edge",
+          "source": "f82185e9de674056baf341ae59029d45",
+          "target": "b8f27cef568f48cf8f1ea8206adfc78d",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bf31667ff75e46e793bfbfff857e0d9a",
+          "edgeType": "Edge",
+          "source": "873db8fa26ad4d9a8ecc32d3c3e226f6",
+          "target": "f82185e9de674056baf341ae59029d45",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "609743e663684bc486f96826fa75c6a7": {
+      "id": "609743e663684bc486f96826fa75c6a7",
+      "name": "user_email",
+      "label": "User_email",
+      "defaultValue": "",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "873db8fa26ad4d9a8ecc32d3c3e226f6",
+      "isHidden": false
+    },
+    "702fa11fe9da4c9e9541dc7d9a39f67a": {
+      "id": "702fa11fe9da4c9e9541dc7d9a39f67a",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "guardian_user_sys_id",
+      "label": "guardian_user_sys_id",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "ea7e67a389624c18a4986730dcc8dc10": {
+      "id": "ea7e67a389624c18a4986730dcc8dc10",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "user_name",
+      "label": "user_name",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "4f3ba501c4d742169eee34481176c40f": {
+      "id": "4f3ba501c4d742169eee34481176c40f",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "user_number",
+      "label": "user_number",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "b37dc923db0f4912980e719ec45f6970": {
+      "id": "b37dc923db0f4912980e719ec45f6970",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "user_status",
+      "label": "user_status",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "52e872bfd2de49c797217db3a1944423": {
+      "id": "52e872bfd2de49c797217db3a1944423",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "user_type",
+      "label": "user_type",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "0753c1184b904ac6ae2ca0a53fb696f5": {
+      "id": "0753c1184b904ac6ae2ca0a53fb696f5",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "user_photo",
+      "label": "user_photo",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "5d668e6467ad417a888988e55e143da6": {
+      "id": "5d668e6467ad417a888988e55e143da6",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "user_type_sys_id",
+      "label": "user_type_sys_id",
+      "varType": "script",
+      "category": "vaVars"
+    }
+  }
+}</graph>
+        <key_phrases/>
+        <library>true</library>
+        <live_agent>false</live_agent>
+        <model_type>llm</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Guardian User Information Retriever</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-11 06:04:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2900e4a72b3fee10d4dffd74ce91bfe8</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Guardian User Information Retriever</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sys_cb_topic_2900e4a72b3fee10d4dffd74ce91bfe8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-13 08:52:43</sys_updated_on>
+        <title>Guardian User Information Retriever</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>TOPIC_BLOCK</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=2900e4a72b3fee10d4dffd74ce91bfe8"/>
+</record_update>

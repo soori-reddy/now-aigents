@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>this tool assist in finding all access levels allocated in the provided location name with input and also return location sys_id for given location name.</description>
+        <input_schema>[{"name":"location_name","description":"name of location specified by user","mandatory":false}]</input_schema>
+        <name>Guardian Fetch Access from Location</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var response = {};
+    var locationGr = new GlideRecordSecure('x_aleen_snguardian_location');
+    locationGr.addQuery('name',"CONTAINS", "global");
+    locationGr.query();
+    if(locationGr.next()){
+        response.location = locationGr.getValue('sys_id');
+        response.location_name = locationGr.getValue('name');
+        response.access_level_list = [];
+        var accessLevel = {};
+        var accessLocationGr = new GlideRecordSecure('x_aleen_snguardian_access_location');
+        accessLocationGr.addQuery('location', locationGr.getValue('sys_id'));
+        accessLocationGr.query();
+        while(accessLocationGr.next()){
+            accessLevel.access_level = accessLocationGr.getValue('access_level');
+            accessLevel.access_level_name = accessLocationGr.getDisplayValue('access_level');
+			response.access_level_list.push(accessLevel);
+        }
+    }else{
+        return JSON.stringify({
+            "success":false,
+            "message": "No location found with specified name"
+        });
+    }
+
+    if(response.access_level_list.length == 0){
+        response.success = false;
+        response.message = "No Access Levels allocated at location";
+    }
+
+    return response;
+    
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 12:19:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e95d8a013b5ccb507999faac73e45a6f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Guardian Fetch Access from Location</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_tool_e95d8a013b5ccb507999faac73e45a6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 17:28:50</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

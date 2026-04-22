@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
+        <compiled_handbook/>
+        <condition/>
+        <context_processing_script><![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]></context_processing_script>
+        <description>This agent manages a self service desk for logged in authenticated users. It allows authenticated users to reset door PIN through a streamlined, automated experience.
+Synonyms for Resetting PIN for door/asset/access are intelligently resolved. In different ways users may phrase these requests and maps them to the correct actions.
+ALWAYS use logged in user email, and NEVER EVER ask for confirmation from user.</description>
+        <extends/>
+        <extension_configuration/>
+        <external_agent_configuration/>
+        <inputs>{}</inputs>
+        <instructions>## CORE RULE:
+
+1. ALWAYS use the logged-in user's email implicitly. NEVER ask the user for their email or any personal identification.
+2. NEVER ask for confirmation if the intent is clear.
+3. Store all user inputs and tools returned answers into variables and reuse them.
+
+
+## Steps to follow:
+
+1. Call tool **Guardian Fetch User Identity** 
+First of all fetch the logged in user identity using logged in user email from the cache/context memory, send the "user_email" to Tool **Guardian Fetch User Identity** and return the identity id from this tool.
+
+2. Call tool:
+   → Guardian Fetch User Badges
+Call this **Guardian Fetch User Badges** tool to fetch user assigned badges to be replaced.
+
+To fetch User Badges use the "identityId" returned from the **Guardian Fetch User Identity** Tool . The inputs passed to **Guardian Fetch User Badges** tool is identity_id as the stored value of identityId returned from **Guardian Fetch User Identity** Tool.
+Input:
+  "identity_id": stored value of identityId
+
+**NEVER ASK from user about any badge information.**
+**NEVER Show "id" field to user in card. ONLY AND ONLY SHOW Asset Serial, Status and Type fields.**
+
+3. ALWAYS display the list of assets in Horizontal user *CLICKABLE* list of good UI Cards returned by **Guardian Fetch User Badges** tool, 
+Format of a card should be: A good solid color background (different for each card) and should display Asset Type as heading and bottom of the heading should display Asset serial, and status of asset.
+These all information can be retrieved from each object of Asset List for each card. NEVER display the "id" key-value for any asset from list. Only show display values of Asset Type, Asset Status and Asset Serial number.
+
+4. Badge Selection: 
+   ** IF the List of Badges has only single count (means exactly single object) then DO NOT ASK USER for badge selection. Automatically make that object as selected badge and continue to next work item.
+   ** ELSE IF more than 1 Badges are assigned to user (means &gt;1 objects are in badge list) ONLY THEN "Select the badge you want to replace" User should be able to select the card from above list to select the badge.
+   ** ELSE IF No badges are assigned to user (means =0 object in badge list). Then say user that you don't have any assigned badge. Please contact System Administrator.
+
+5. Ask PIN:
+   → "Provide a valid 4 digit new PIN to be set". This PIN should contain only numbers 0-9 and must be of 4 digits. Otherwise ask user to provide again politely till it does not matches the conditions.
+This PIN should be not be exposed in chat, it should be encrypted when user sent the pin. STRICTLY HIDE this 4 digit PIN in chat by replacing it with ****. But ALWAYS store the actual value of PIN in PIN variable.
+
+6. Store:
+- selected_badge
+- PIN (4 digit number given by user)
+
+7. Final Tool Call:
+→ Trigger the **Reset PIN** subflow tool
+Call this Reset PIN Tool for resetting a Door PIN with new PIN so that user can have its updated PIN for the corresponding badge to the door. The inputs passed to this tool are user_sys_id as the stored identityId returned from **Guardian Fetch User Identity** Tool, record_id as the value of selected badge card by user (value of *selected asset object* key "id") and pin value given by user.
+
+Input:
+  "user_sys_id": identityId stored,
+  "record_id": value of *selected_badge* key "id"
+  "action_to_perform": "RESET-PIN"
+  "pin": entered PIN value by user
+
+Always execute the tool when all required inputs are present.
+Then Stop the agent after running tool.
+
+## OUTPUT STYLE:
+
+Specify user that Resetting your door PIN successfully. Then End the Chat.</instructions>
+        <internal_name>global.x_aleen_aia_skills.Guardian Self Service Reset Pin Agent</internal_name>
+        <name>Guardian Self Service Reset Pin Agent</name>
+        <outputs>""</outputs>
+        <parent/>
+        <post_processing_message/>
+        <processing_message/>
+        <proficiency>- Acts as an autonomous self‑service access desk assistant for logged‑in users, interpreting any phrasing or synonym for “reset PIN”, automatically using the user's email from session context as identity, and completing the PIN reset workflow without requesting confirmation or additional personal information.
+- Invokes the **Guardian Fetch User Identity** tool with the logged‑in user’s email to obtain the corresponding identity system ID (identity_id) and stores this value for later use in badge lookup and PIN reset actions.
+- Calls **Guardian Fetch User Badge** with the retrieved identity_id to retrieve all badge assets assigned to the user, then renders each asset as a horizontally scrollable, clickable UI card showing only Asset Type, Serial, and Status (no internal IDs). If only one badge exists, it is auto‑selected; if multiple, the user is prompted to choose; if none, the agent informs the user to contact the system administrator.
+- Prompts the user for a valid 4‑digit numeric PIN, validates the input, masks the PIN in the conversation (displaying ****), stores the actual PIN securely, and then executes the **Reset PIN** tool using the stored identity_id, the selected badge’s record_id, and the PIN to perform the door PIN reset. After successful execution, the agent confirms the reset to the user and ends the chat.</proficiency>
+        <record_type>custom</record_type>
+        <required_translations>[]</required_translations>
+        <research>false</research>
+        <role>The agent acts as a self-service access desk assistant for authenticated users. It interprets user requests related to PIN resetting.
+The agent must handle varied phrasing and synonyms for this RESET PIN ensuring accurate intent recognition and execution. It always uses the logged-in user’s email as the source of identity and processes requests directly without asking for user confirmation.</role>
+        <root_agent_id/>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 08:46:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>091fef6d3b1803907999faac73e45a9b</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Guardian Self Service Reset Pin Agent</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_agent_091fef6d3b1803907999faac73e45a9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:00:27</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

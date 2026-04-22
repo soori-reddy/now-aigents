@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent>
+        <description>this tool assist in finding all access levels allocated in the provided location name with input and also return location sys_id for given location name.</description>
+        <display_mode>inline</display_mode>
+        <display_output>false</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>947464383bdc0b507999faac73e45afc</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"location_name","value":"","description":"name of location specified by user","mandatory":false}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Guardian Fetch Access from Location</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 12:19:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>695dca013b5ccb507999faac73e45aa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Fetch Access from Location</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_695dca013b5ccb507999faac73e45aa1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 12:19:25</sys_updated_on>
+        <timeout/>
+        <tool display_value="Guardian Fetch Access from Location">e95d8a013b5ccb507999faac73e45a6f</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sn_aia_agent_tool_m2m_695dca013b5ccb507999faac73e45aa1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent><description>this tool assist in finding all access levels allocated in the provided location name with input and also return location sys_id for given location name.</description><display_mode>inline</display_mode><display_output>false</display_output><document_status/><entity>sn_aia_agent</entity><entity_id>947464383bdc0b507999faac73e45afc</entity_id><execution_mode>autopilot</execution_mode><inputs>[{"name":"location_name","value":"","description":"name of location specified by user","mandatory":false}]</inputs><max_auto_executions>10</max_auto_executions><name>Guardian Fetch Access from Location</name><output_transformation_strategy>none</output_transformation_strategy><post_message/><post_processing_script/><pre_message/><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 12:19:25</sys_created_on><sys_domain>global</sys_domain><sys_id>695dca013b5ccb507999faac73e45aa1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Guardian Fetch Access from Location</sys_name><sys_overrides/><sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package><sys_policy/><sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_695dca013b5ccb507999faac73e45aa1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 12:19:25</sys_updated_on><timeout/><tool display_value="Guardian Fetch Access from Location">e95d8a013b5ccb507999faac73e45a6f</tool><tool_attributes>{}</tool_attributes><transformation_instructions/><widgets>db0e858eff62b210f465ffffffffff2c</widgets></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-393523776</payload_hash>
+        <record_name>Guardian Fetch Access from Location</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 12:19:25</sys_created_on>
+        <sys_id>255dca013b5ccb507999faac73e45aa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d9114fea50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 12:19:25</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>e15dca013c5ccb50bed65d48f5eed0a7</update_guid>
+        <update_guid_history>e15dca013c5ccb50bed65d48f5eed0a7:-393523776</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Guardian Fetch Access from Location">647ae1573b184f907999faac73e45a6d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 09:33:18</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>c77531780f9e4c14928bce7fdc5603e4</sys_id>
+        <sys_metadata>695dca013b5ccb507999faac73e45aa1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Fetch Access from Location</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_695dca013b5ccb507999faac73e45aa1</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_695dca013b5ccb507999faac73e45aa1">255dca013b5ccb507999faac73e45aa8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:33:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

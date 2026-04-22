@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_config">
+    <sys_gen_ai_skill_config action="DELETE">
+        <active>false</active>
+        <channels/>
+        <discoverable>true</discoverable>
+        <hint>Guardian Self Service User Helpdesk Agent</hint>
+        <skill_id display_value="Guardian Self Service User Helpdesk Agent">1264a2513bdc4f507999faac73e45ac8</skill_id>
+        <supervision/>
+        <sys_class_name>sys_gen_ai_skill_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 08:38:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>666426513bdc4f507999faac73e45a88</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Guardian Self Service User Helpdesk Agent</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_config_666426513bdc4f507999faac73e45a88</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 11:17:37</sys_updated_on>
+        <use_knowledge_graph>false</use_knowledge_graph>
+        <visible>true</visible>
+    </sys_gen_ai_skill_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sys_gen_ai_skill_config_666426513bdc4f507999faac73e45a88</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_config"><sys_gen_ai_skill_config action="INSERT_OR_UPDATE"><active>false</active><channels/><discoverable>true</discoverable><hint>Guardian Self Service User Helpdesk Agent</hint><skill_id display_value="Guardian Self Service User Helpdesk Agent">1264a2513bdc4f507999faac73e45ac8</skill_id><supervision/><sys_class_name>sys_gen_ai_skill_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-16 08:38:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>666426513bdc4f507999faac73e45a88</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Guardian Self Service User Helpdesk Agent</sys_name><sys_overrides/><sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package><sys_policy/><sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope><sys_update_name>sys_gen_ai_skill_config_666426513bdc4f507999faac73e45a88</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-16 11:17:37</sys_updated_on><use_knowledge_graph>false</use_knowledge_graph><visible>true</visible></sys_gen_ai_skill_config></record_update>]]></payload>
+        <payload_hash>-1083761921</payload_hash>
+        <record_name>Guardian Self Service User Helpdesk Agent</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 11:17:37</sys_created_on>
+        <sys_id>06c88fd93b148f507999faac73e45ad7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d9602c7270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 11:17:37</sys_updated_on>
+        <type>Generative AI Skill Config</type>
+        <update_guid>06c88fd982148f503acabd20473990d6</update_guid>
+        <update_guid_history>06c88fd982148f503acabd20473990d6:-1083761921,be64665150dc4f50f25fd2dd37e2f677:1034920456</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 09:33:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_gen_ai_skill_config">sys_gen_ai_skill_config</sys_db_object>
+        <sys_id>26ff8c483a0e47d0a490fe0b1d339204</sys_id>
+        <sys_metadata>666426513bdc4f507999faac73e45a88</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Self Service User Helpdesk Agent</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sys_gen_ai_skill_config_666426513bdc4f507999faac73e45a88</sys_update_name>
+        <sys_update_version display_value="sys_gen_ai_skill_config_666426513bdc4f507999faac73e45a88">06c88fd93b148f507999faac73e45ad7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:33:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

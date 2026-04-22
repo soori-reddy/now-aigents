@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_mcp_ai_skill_tool_definition">
+    <sn_mcp_ai_skill_tool_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>ai_skill</category>
+        <description>Fetch Cardholder Record from Guardian Identities using logged in user email for self service tool</description>
+        <label>Guardian Fetch Identity via login User</label>
+        <name>x_aleen_aia_skills.guardian_fetch_identity_via_login_user</name>
+        <servers/>
+        <servers_associated/>
+        <sys_class_name>sn_mcp_ai_skill_tool_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 07:00:09</sys_created_on>
+        <sys_id>c3aa77243b980b507999faac73e45a2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Fetch Identity via login User</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_mcp_ai_skill_tool_definition_c3aa77243b980b507999faac73e45a2f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 07:00:09</sys_updated_on>
+        <tool display_value="Guardian Fetch Identity via login User">963afbdceb940b50e4a8f1b4cad0cda5</tool>
+        <tool_artifact_id/>
+        <tool_category/>
+    </sn_mcp_ai_skill_tool_definition>
+</record_update>

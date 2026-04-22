@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config_var_set">
+    <sn_nowassist_skill_config_var_set action="INSERT_OR_UPDATE">
+        <config_type display_value="Skill builder Delivery step">7dfdff5893b64210aa5730f164891837</config_type>
+        <description/>
+        <hide_step>false</hide_step>
+        <name>__delivery_step__</name>
+        <order>100</order>
+        <parent/>
+        <screen_id/>
+        <screen_table>sys_ux_macroponent</screen_table>
+        <skill_config display_value="Guardian Fetch Identity via login User">963afbdceb940b50e4a8f1b4cad0cda5</skill_config>
+        <sys_class_name>sn_nowassist_skill_config_var_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2c30a0e03bdc87507999faac73e45a36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>__delivery_step__</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_var_set_2c30a0e03bdc87507999faac73e45a36</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <title/>
+        <vars/>
+    </sn_nowassist_skill_config_var_set>
+    <sys_translated_text action="delete_multiple" query="documentkey=2c30a0e03bdc87507999faac73e45a36"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2c30a0e03bdc87507999faac73e45a36"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>2c30a0e03bdc87507999faac73e45a36</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_id>b030a0e03bdc87507999faac73e45a39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enable UI Builder">e3f313ddff6522103a2bffffffffff48</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>2c30a0e03bdc87507999faac73e45a36</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_id>b430a0e03bdc87507999faac73e45a3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enable UI Action">f09e3f9893b64210aa5730f16489189f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>2c30a0e03bdc87507999faac73e45a36</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_id>b430a0e03bdc87507999faac73e45a3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <value/>
+        <variable display_value="UI Action Id">4fee37d893b64210aa5730f164891896</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>2c30a0e03bdc87507999faac73e45a36</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_id>b430a0e03bdc87507999faac73e45a3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enable NAP">ab5ef79893b64210aa5730f16489185a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>2c30a0e03bdc87507999faac73e45a36</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_id>bc30a0e03bdc87507999faac73e45a3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <value>e13840cf77d53110569156391e5a99ba</value>
+        <variable display_value="Associated Chat Experiences">27b274b97fde9610076726d6ac866550</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>2c30a0e03bdc87507999faac73e45a36</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_id>bc30a0e03bdc87507999faac73e45a3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable conversational experience">14a8e8397f9e9610076726d6ac866591</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>2c30a0e03bdc87507999faac73e45a36</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 15:05:37</sys_created_on>
+        <sys_id>f030a0e03bdc87507999faac73e45a62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:05:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enable In Product">24c14b967fe85210e98d0b583d8665dd</variable>
+    </sys_variable_value>
+</record_update>

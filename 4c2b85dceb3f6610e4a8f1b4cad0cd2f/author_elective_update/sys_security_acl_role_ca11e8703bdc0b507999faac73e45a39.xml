@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 09:48:01</sys_created_on>
+        <sys_id>ca11e8703bdc0b507999faac73e45a39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow.public</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_security_acl display_value="global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow">8611a8703bdc0b507999faac73e45a11</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ca11e8703bdc0b507999faac73e45a39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 09:48:01</sys_updated_on>
+        <sys_user_role display_value="public" name="public">b0593b350a0a0aa7001d689e4542dc28</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sys_security_acl_role_ca11e8703bdc0b507999faac73e45a39</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-14 09:48:01</sys_created_on><sys_id>ca11e8703bdc0b507999faac73e45a39</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow.public</sys_name><sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package><sys_policy/><sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope><sys_security_acl display_value="global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow">8611a8703bdc0b507999faac73e45a11</sys_security_acl><sys_update_name>sys_security_acl_role_ca11e8703bdc0b507999faac73e45a39</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-14 09:48:01</sys_updated_on><sys_user_role display_value="public" name="public">b0593b350a0a0aa7001d689e4542dc28</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-318618120</payload_hash>
+        <record_name>global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow.public</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 09:48:01</sys_created_on>
+        <sys_id>8a11e8703bdc0b507999faac73e45a4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d8b6407ff0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-14 09:48:01</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>0a11e87063dc0b5055e3b99c1043094d</update_guid>
+        <update_guid_history>0a11e87063dc0b5055e3b99c1043094d:-318618120</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow.public">9cf447913b148f507999faac73e45ae8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 11:00:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0bb50ab383ca4504b1fcd790abe2f481</sys_id>
+        <sys_metadata>ca11e8703bdc0b507999faac73e45a39</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow.public</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent display_value="global.x_aleen_aia_skills.Guardian Self Service User Helpdesk Workflow">8611a8703bdc0b507999faac73e45a11</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_ca11e8703bdc0b507999faac73e45a39</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_ca11e8703bdc0b507999faac73e45a39">8a11e8703bdc0b507999faac73e45a4e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 11:00:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

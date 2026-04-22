@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill">
+    <sys_gen_ai_skill action="INSERT_OR_UPDATE">
+        <skill_description>This agent manages a self service desk for logged in authenticated users. It allows authenticated users to register a visit for a visitor.
+Synonyms for all actions are intelligently resolved to ensure efficient and seamless requests management. It understands different ways users may phrase registering visit request.
+ALWAYS use logged in user email to fetch logged in user location, and ALWAYS use email address given by user to register a visit.</skill_description>
+        <skill_document>3724257a3bd44b907999faac73e45a08</skill_document>
+        <skill_name>Guardian AI Agent Self Service Register Visit</skill_name>
+        <skill_table>sn_aia_skill_metadata</skill_table>
+        <sys_class_name>sys_gen_ai_skill</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-20 19:49:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f324257a3bd44b907999faac73e45a40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_f324257a3bd44b907999faac73e45a40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-20 19:49:01</sys_updated_on>
+    </sys_gen_ai_skill>
+    <sys_translated_text action="delete_multiple" query="documentkey=f324257a3bd44b907999faac73e45a40"/>
+</record_update>

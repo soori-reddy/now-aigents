@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent>
+        <description>this tool is used to fetch assigned badges to identity using identity id and return list of assets</description>
+        <display_mode>inline</display_mode>
+        <display_output>false</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>947464383bdc0b507999faac73e45afc</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"identity_id","value":"","description":"sys id of identity","mandatory":false}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Guardian Fetch User Badge</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 18:57:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a6ee1a783b9c4b507999faac73e45a21</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Guardian Fetch User Badge</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_a6ee1a783b9c4b507999faac73e45a21</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 07:32:06</sys_updated_on>
+        <timeout/>
+        <tool display_value="Guardian Fetch User Badge">d2ee1a783b9c4b507999faac73e45a16</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sn_aia_agent_tool_m2m_a6ee1a783b9c4b507999faac73e45a21</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent><description>this tool is used to fetch assigned badges to identity using identity id and return list of assets</description><display_mode>inline</display_mode><display_output>false</display_output><document_status/><entity>sn_aia_agent</entity><entity_id>947464383bdc0b507999faac73e45afc</entity_id><execution_mode>autopilot</execution_mode><inputs>[{"name":"identity_id","value":"","description":"sys id of identity","mandatory":false}]</inputs><max_auto_executions>10</max_auto_executions><name>Guardian Fetch User Badge</name><output_transformation_strategy>none</output_transformation_strategy><post_message/><post_processing_script/><pre_message/><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-14 18:57:44</sys_created_on><sys_domain>global</sys_domain><sys_id>a6ee1a783b9c4b507999faac73e45a21</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Guardian Fetch User Badge</sys_name><sys_overrides/><sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package><sys_policy/><sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_a6ee1a783b9c4b507999faac73e45a21</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 07:32:06</sys_updated_on><timeout/><tool display_value="Guardian Fetch User Badge">d2ee1a783b9c4b507999faac73e45a16</tool><tool_attributes>{}</tool_attributes><transformation_instructions/><widgets>db0e858eff62b210f465ffffffffff2c</widgets></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>1147646238</payload_hash>
+        <record_name>Guardian Fetch User Badge</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 07:32:06</sys_created_on>
+        <sys_id>7c9b81453b14cb507999faac73e45a86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d900df4150000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 07:32:06</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>7c9b8145c614cb502268e7896b6b5085</update_guid>
+        <update_guid_history>7c9b8145c614cb502268e7896b6b5085:1147646238,e4da89c1c914cb50f543b06ef4dc150b:-278587851,a333f80d7210cb50cb903db826ce55cf:-285067162,df31bcc53210cb50dab9b543fb19ee41:243510881,aeee1a78a89c4b504b9046b15aca4f41:658022332</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Guardian Fetch User Badge">247ae1573b184f907999faac73e45a9d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 09:33:18</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>14072cb4e9a84a1093be7397d9791aa4</sys_id>
+        <sys_metadata>a6ee1a783b9c4b507999faac73e45a21</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Fetch User Badge</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_a6ee1a783b9c4b507999faac73e45a21</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_a6ee1a783b9c4b507999faac73e45a21">7c9b81453b14cb507999faac73e45a86</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:33:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

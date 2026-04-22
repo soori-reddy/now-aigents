@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_skill_metadata">
+    <sn_aia_skill_metadata action="INSERT_OR_UPDATE">
+        <description>This agent manages a self service desk for logged in authenticated users. It allows authenticated users to request a new access for a location.
+Synonyms for all actions are intelligently resolved to ensure efficient and seamless requests management. It understands different ways users may phrase this request.
+ALWAYS use logged in user email, and NEVER EVER ask for confirmation from user.</description>
+        <document_id>477383dd3bd08f507999faac73e45a02</document_id>
+        <document_table>sn_aia_agent</document_table>
+        <internal_name>global.x_aleen_aia_skills.Guardian Self Service Assign Access Agent</internal_name>
+        <name>Guardian Self Service Assign Access Agent</name>
+        <sys_class_name>sn_aia_skill_metadata</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 12:06:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9de3db953b948f507999faac73e45a99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Self Service Assign Access Agent</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_skill_metadata_9de3db953b948f507999faac73e45a99</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 12:06:11</sys_updated_on>
+    </sn_aia_skill_metadata>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Guardian Replace Badge Self Service - Delete old Identity Asset and Assign new Identity asset</description>
+        <input_schema>[{"name":"old_asset","description":"selected badge by user from list of assets to be removed as a part of replacement","mandatory":false},{"name":"identity_id","description":"sys id of user for which action to be performed","mandatory":false},{"name":"valid_till","description":"validity dates of new asset to be assigned","mandatory":false}]</input_schema>
+        <name>Guardian Replace Badge Self Service</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+
+    gs.info("Inputs to replace badge scenario : ");
+    gs.info("Old asset : " + JSON.stringify(inputs.old_asset));
+    gs.info("id : " + inputs.identity_id);
+    gs.info("VT : " + inputs.valid_till);
+
+    var subflowInputs = {};
+    // subflowInputs['web_prov'] = "false"; // String 
+    // subflowInputs['location_sys_id'] = ; // String 
+    subflowInputs['user_sys_id'] = ""; // String 
+    subflowInputs['action_to_perform'] = "replace"; // String 
+    subflowInputs['valid_from'] = new GlideDateTime().getDisplayValue(); // String 
+    subflowInputs['valid_to'] = new GlideDateTime().getDisplayValue();; // String 
+    subflowInputs['submission_mode'] = "direct"; // String 
+    // subflowInputs['reason'] = ""; // String 
+    // subflowInputs['assign_default_access'] = ""; // String 
+    // subflowInputs['badge_id_assign'] = ; // String 
+    subflowInputs['badge_id_to_replace'] = {}; // String 
+    // subflowInputs['copy_access'] = ; // String 
+    subflowInputs['deactivate_old_badge'] = "true"; // String 
+
+    // Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+    sn_fd.FlowAPI.getRunner().subflow('x_aleen_aia_skills.guardian_ai_agent_badge_assignment_subflow').inBackground().withInputs(subflowInputs).run();
+
+    // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+    // var result = sn_fd.FlowAPI.getRunner().subflow('x_aleen_aia_skills.guardian_ai_agent_badge_assignment_subflow').inForeground().withInputs(subflowInputs).run();
+    // var outputs = result.getOutputs();
+    // var response = outputs['response']; // String
+    // return response;
+
+    // Get Outputs:
+    // Note: outputs can only be retrieved when executing synchronously.
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 18:57:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6aee1a783b9c4b507999faac73e45a50</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Guardian Replace Badge Self Service</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_tool_6aee1a783b9c4b507999faac73e45a50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 09:37:56</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

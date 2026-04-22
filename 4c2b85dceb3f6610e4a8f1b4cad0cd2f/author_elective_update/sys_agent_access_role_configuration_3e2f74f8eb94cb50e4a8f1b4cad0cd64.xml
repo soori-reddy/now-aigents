@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_configuration">
+    <sys_agent_access_role_configuration action="DELETE">
+        <action>limit_to_roles</action>
+        <agent>947464383bdc0b507999faac73e45afc</agent>
+        <agent_table>sn_aia_agent</agent_table>
+        <allow_all_session_roles>false</allow_all_session_roles>
+        <description/>
+        <name>947464383bdc0b507999faac73e45afc</name>
+        <role_list name="admin">2831a114c611228501d4ea6c309d626d</role_list>
+        <sys_class_name>sys_agent_access_role_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 11:59:25</sys_created_on>
+        <sys_id>3e2f74f8eb94cb50e4a8f1b4cad0cd64</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>947464383bdc0b507999faac73e45afc</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sys_agent_access_role_configuration_3e2f74f8eb94cb50e4a8f1b4cad0cd64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 06:06:39</sys_updated_on>
+    </sys_agent_access_role_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sys_agent_access_role_configuration_3e2f74f8eb94cb50e4a8f1b4cad0cd64</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_configuration"><sys_agent_access_role_configuration action="INSERT_OR_UPDATE"><action>limit_to_roles</action><agent>947464383bdc0b507999faac73e45afc</agent><agent_table>sn_aia_agent</agent_table><allow_all_session_roles>false</allow_all_session_roles><description/><name>947464383bdc0b507999faac73e45afc</name><role_list name="admin">2831a114c611228501d4ea6c309d626d</role_list><sys_class_name>sys_agent_access_role_configuration</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-14 11:59:25</sys_created_on><sys_id>3e2f74f8eb94cb50e4a8f1b4cad0cd64</sys_id><sys_mod_count>1</sys_mod_count><sys_name>947464383bdc0b507999faac73e45afc</sys_name><sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package><sys_policy/><sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope><sys_update_name>sys_agent_access_role_configuration_3e2f74f8eb94cb50e4a8f1b4cad0cd64</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 06:06:39</sys_updated_on></sys_agent_access_role_configuration></record_update>]]></payload>
+        <payload_hash>-649496194</payload_hash>
+        <record_name>947464383bdc0b507999faac73e45afc</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 06:06:39</sys_created_on>
+        <sys_id>5508f0893b50cb507999faac73e45ac5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d8fbfb95c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 06:06:39</sys_updated_on>
+        <type>Agent Access Role Configuration</type>
+        <update_guid>1508f089c250cb506f223e1ef71eadc4</update_guid>
+        <update_guid_history>1508f089c250cb506f223e1ef71eadc4:-649496194,722f74f81b94cb5053cd61654f02cf68:-1106434257</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 09:33:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_agent_access_role_configuration">sys_agent_access_role_configuration</sys_db_object>
+        <sys_id>220ecf73f65d4d948553f576fc045390</sys_id>
+        <sys_metadata>3e2f74f8eb94cb50e4a8f1b4cad0cd64</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>947464383bdc0b507999faac73e45afc</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sys_agent_access_role_configuration_3e2f74f8eb94cb50e4a8f1b4cad0cd64</sys_update_name>
+        <sys_update_version display_value="sys_agent_access_role_configuration_3e2f74f8eb94cb50e4a8f1b4cad0cd64">5508f0893b50cb507999faac73e45ac5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:33:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

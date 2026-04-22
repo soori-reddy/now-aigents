@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="INSERT_OR_UPDATE">
+        <agent display_value="Guardian Self Service Assign Access Agent">477383dd3bd08f507999faac73e45a02</agent>
+        <memory_scope>global</memory_scope>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 12:06:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>82e35f953b948f507999faac73e45abe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_team_member_82e35f953b948f507999faac73e45abe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 12:06:13</sys_updated_on>
+        <team display_value="Default VA Workflow">046db51eff942210d09effffffffffdb</team>
+    </sn_aia_team_member>
+</record_update>

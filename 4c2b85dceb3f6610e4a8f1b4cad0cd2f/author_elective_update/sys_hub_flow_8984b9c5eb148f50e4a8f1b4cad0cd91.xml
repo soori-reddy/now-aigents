@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>intermediateFlowVersion=1.3,labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview>Guardian AI Agent Self Service Assign Access</display_name_after_preview>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>text2flow</generation_source>
+        <internal_name>guardian_ai_agent_self_service_assign_accessc18</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Guardian AI Agent Self Service Assign Access</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:30:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8984b9c5eb148f50e4a8f1b4cad0cd91</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Guardian AI Agent Self Service Assign Access</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sys_hub_flow_8984b9c5eb148f50e4a8f1b4cad0cd91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:17</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_variable_value action="DELETE" query="document_key=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91^id=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT IN8584b9c5eb148f50e4a8f1b4cad0cd96"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>8984b9c5eb148f50e4a8f1b4cad0cd91</id>
+        <name>Guardian AI Agent Self Service Assign Accessc18</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:30:59</sys_created_on>
+        <sys_id>8584b9c5eb148f50e4a8f1b4cad0cd96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:30:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=8584b9c5eb148f50e4a8f1b4cad0cd96"/>
+    <sys_hub_flow_input action="DELETE" query="model=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT IN2f84bdc5eb148f50e4a8f1b4cad0cd07,ff84bdc5eb148f50e4a8f1b4cad0cd3d"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>identity_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>identity_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Guardian AI Agent Self Service Assign Access">8984b9c5eb148f50e4a8f1b4cad0cd91</model>
+        <model_id>8984b9c5eb148f50e4a8f1b4cad0cd91</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91</name>
+        <next_element/>
+        <order>1000</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:10</sys_created_on>
+        <sys_id>2f84bdc5eb148f50e4a8f1b4cad0cd07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=2f84bdc5eb148f50e4a8f1b4cad0cd07"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>access_level</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>access_level</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Guardian AI Agent Self Service Assign Access">8984b9c5eb148f50e4a8f1b4cad0cd91</model>
+        <model_id>8984b9c5eb148f50e4a8f1b4cad0cd91</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91</name>
+        <next_element/>
+        <order>1001</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:10</sys_created_on>
+        <sys_id>ff84bdc5eb148f50e4a8f1b4cad0cd3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=ff84bdc5eb148f50e4a8f1b4cad0cd3d"/>
+    <sys_hub_flow_output action="DELETE" query="model=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT INe094fdc5eb148f50e4a8f1b4cad0cd47"/>
+    <sys_hub_flow_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>created_record_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>Created Record Sys ID</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Guardian AI Agent Self Service Assign Access">8984b9c5eb148f50e4a8f1b4cad0cd91</model>
+        <model_id>8984b9c5eb148f50e4a8f1b4cad0cd91</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91</name>
+        <next_element/>
+        <order>1000</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:13</sys_created_on>
+        <sys_id>e094fdc5eb148f50e4a8f1b4cad0cd47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=e094fdc5eb148f50e4a8f1b4cad0cd47"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT INd584f9c5eb148f50e4a8f1b4cad0cd0d"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Create an Identity Access record using the provided inputs. The identity_id and access_level are already sys_id values and must be used directly as reference fields. Set the identity field to identity_id, access_level field to access_level, and populate v</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Guardian AI Agent Self Service Assign Access">8984b9c5eb148f50e4a8f1b4cad0cd91</flow>
+        <generation_source>text2flow</generation_source>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:00</sys_created_on>
+        <sys_id>d584f9c5eb148f50e4a8f1b4cad0cd0d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:10</sys_updated_on>
+        <ui_id>5984b9c5-0414-8f50-87d1-ed49050fe6ca</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VUTW+cMBD9K5HPCMGSrpK9VYn21CZSU+0litBgD7uWjHFtswld5b93jB0WVcmpvYQT8+brveGJxxPT0CHbMA+NwnoKMnYENQSQXoV0RsG4OyMGLFV5tGxzYvwglbCo2ebxKWNSUMm6xOLLdbnmVVlVq6JYXV2WzbpqypWoAPGSRihoUFHpz7CU4vc4+NG8i31b9l7cxURvReBTZAxfPGqBRKQF5TBjHWgBvrcj23g7EGARxL1W41xxkNpHaR28OPmb1l4Voa5FUsaT7Dms00ki3N6ChweazP1gUyk/9JKjizcR2MKg/M0SiwX3xstex5ZJZuru1dDpu3gSNg9YfIHBEQk0QWdgnmS0D4f++ccby63U00lSUvUc1ByB91Y2gw98TgwVdjSo7sAYqfe1sf1RTs3Epcv3ioK8Vf0zLXVyr3PggXhOZ4V8S/jtBO/AyqDiO42h5teMudHdKHDurIWOWP8aApOoLGmo4xlCC7fS+K+04IiJ7ms2m3Typftngwosrj80aNksDLqVqIQ7O3Qm8OZO7Gi5xzoS+suhKXmxS8nk0vJ/ubRcF9PzibwaxX16qy7+Sh+Y9ukPBF5tIFsFAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=d584f9c5eb148f50e4a8f1b4cad0cd0d"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT INd584f9c5eb148f50e4a8f1b4cad0cd0f"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">9584f9c5eb148f50e4a8f1b4cad0cd0e</block>
+        <comment>Return the sys_id of the created record</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Guardian AI Agent Self Service Assign Access">8984b9c5eb148f50e4a8f1b4cad0cd91</flow>
+        <flow_variables_assigned/>
+        <generation_source>text2flow</generation_source>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:00</sys_created_on>
+        <sys_id>d584f9c5eb148f50e4a8f1b4cad0cd0f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:14</sys_updated_on>
+        <ui_id>5184b9c5-1014-8f50-e345-2733ba3640d9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_hub_flow_variable action="DELETE" query="model=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_documentation action="DELETE">
+        <element>access_level</element>
+        <help/>
+        <hint/>
+        <label>access_level</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:10</sys_created_on>
+        <sys_id>3384bdc5eb148f50e4a8f1b4cad0cd42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>identity_id</element>
+        <help/>
+        <hint/>
+        <label>identity_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:10</sys_created_on>
+        <sys_id>3784bdc5eb148f50e4a8f1b4cad0cd3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_documentation action="DELETE">
+        <element>created_record_sys_id</element>
+        <help/>
+        <hint/>
+        <label>Created Record Sys ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:13</sys_created_on>
+        <sys_id>2094fdc5eb148f50e4a8f1b4cad0cd4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=8984b9c5eb148f50e4a8f1b4cad0cd91"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sys_hub_flow_8984b9c5eb148f50e4a8f1b4cad0cd91</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;allow_high_security_roles&gt;false&lt;/allow_high_security_roles&gt;&lt;annotation/&gt;&lt;attributes&gt;intermediateFlowVersion=1.3,labelCacheCleanUpExecuted=true&lt;/attributes&gt;&lt;authored_on_release_version&gt;29000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;display_name_after_preview&gt;Guardian AI Agent Self Service Assign Access&lt;/display_name_after_preview&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source&gt;text2flow&lt;/generation_source&gt;&lt;internal_name&gt;guardian_ai_agent_self_service_assign_accessc18&lt;/internal_name&gt;&lt;label_cache&gt;[]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Guardian AI Agent Self Service Assign Access&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:30:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Guardian AI Agent Self Service Assign Access&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:17&lt;/sys_updated_on&gt;&lt;type&gt;subflow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record/&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91^id=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT IN8584b9c5eb148f50e4a8f1b4cad0cd96"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/id&gt;&lt;name&gt;Guardian AI Agent Self Service Assign Accessc18&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:30:59&lt;/sys_created_on&gt;&lt;sys_id&gt;8584b9c5eb148f50e4a8f1b4cad0cd96&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:30:59&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8584b9c5eb148f50e4a8f1b4cad0cd96"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT IN2f84bdc5eb148f50e4a8f1b4cad0cd07,ff84bdc5eb148f50e4a8f1b4cad0cd3d"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;identity_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;identity_id&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Guardian AI Agent Self Service Assign Access"&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/model&gt;&lt;model_id&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1000&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:10&lt;/sys_created_on&gt;&lt;sys_id&gt;2f84bdc5eb148f50e4a8f1b4cad0cd07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:10&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2f84bdc5eb148f50e4a8f1b4cad0cd07"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;access_level&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;access_level&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Guardian AI Agent Self Service Assign Access"&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/model&gt;&lt;model_id&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1001&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:10&lt;/sys_created_on&gt;&lt;sys_id&gt;ff84bdc5eb148f50e4a8f1b4cad0cd3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:10&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ff84bdc5eb148f50e4a8f1b4cad0cd3d"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT INe094fdc5eb148f50e4a8f1b4cad0cd47"/&gt;&lt;sys_hub_flow_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;created_record_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;GUID&lt;/internal_type&gt;&lt;label&gt;Created Record Sys ID&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Guardian AI Agent Self Service Assign Access"&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/model&gt;&lt;model_id&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1000&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:13&lt;/sys_created_on&gt;&lt;sys_id&gt;e094fdc5eb148f50e4a8f1b4cad0cd47&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e094fdc5eb148f50e4a8f1b4cad0cd47"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT INd584f9c5eb148f50e4a8f1b4cad0cd0d"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create Record"&gt;2de05916c31332002841b63b12d3aee1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment&gt;Create an Identity Access record using the provided inputs. The identity_id and access_level are already sys_id values and must be used directly as reference fields. Set the identity field to identity_id, access_level field to access_level, and populate v&lt;/comment&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Guardian AI Agent Self Service Assign Access"&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/flow&gt;&lt;generation_source&gt;text2flow&lt;/generation_source&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:00&lt;/sys_created_on&gt;&lt;sys_id&gt;d584f9c5eb148f50e4a8f1b4cad0cd0d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;5984b9c5-0414-8f50-87d1-ed49050fe6ca&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VUTW+cMBD9K5HPCMGSrpK9VYn21CZSU+0litBgD7uWjHFtswld5b93jB0WVcmpvYQT8+brveGJxxPT0CHbMA+NwnoKMnYENQSQXoV0RsG4OyMGLFV5tGxzYvwglbCo2ebxKWNSUMm6xOLLdbnmVVlVq6JYXV2WzbpqypWoAPGSRihoUFHpz7CU4vc4+NG8i31b9l7cxURvReBTZAxfPGqBRKQF5TBjHWgBvrcj23g7EGARxL1W41xxkNpHaR28OPmb1l4Voa5FUsaT7Dms00ki3N6ChweazP1gUyk/9JKjizcR2MKg/M0SiwX3xstex5ZJZuru1dDpu3gSNg9YfIHBEQk0QWdgnmS0D4f++ccby63U00lSUvUc1ByB91Y2gw98TgwVdjSo7sAYqfe1sf1RTs3Epcv3ioK8Vf0zLXVyr3PggXhOZ4V8S/jtBO/AyqDiO42h5teMudHdKHDurIWOWP8aApOoLGmo4xlCC7fS+K+04IiJ7ms2m3Typftngwosrj80aNksDLqVqIQ7O3Qm8OZO7Gi5xzoS+suhKXmxS8nk0vJ/ubRcF9PzibwaxX16qy7+Sh+Y9ukPBF5tIFsFAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=d584f9c5eb148f50e4a8f1b4cad0cd0d"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8984b9c5eb148f50e4a8f1b4cad0cd91^sys_idNOT INd584f9c5eb148f50e4a8f1b4cad0cd0f"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;9584f9c5eb148f50e4a8f1b4cad0cd0e&lt;/block&gt;&lt;comment&gt;Return the sys_id of the created record&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Guardian AI Agent Self Service Assign Access"&gt;8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source&gt;text2flow&lt;/generation_source&gt;&lt;logic_definition display_value="Assign Subflow Outputs"&gt;df4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:00&lt;/sys_created_on&gt;&lt;sys_id&gt;d584f9c5eb148f50e4a8f1b4cad0cd0f&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;5184b9c5-1014-8f50-e345-2733ba3640d9&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;access_level&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;access_level&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:10&lt;/sys_created_on&gt;&lt;sys_id&gt;3384bdc5eb148f50e4a8f1b4cad0cd42&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:10&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;identity_id&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;identity_id&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:10&lt;/sys_created_on&gt;&lt;sys_id&gt;3784bdc5eb148f50e4a8f1b4cad0cd3a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:10&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;created_record_sys_id&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Created Record Sys ID&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 10:31:13&lt;/sys_created_on&gt;&lt;sys_id&gt;2094fdc5eb148f50e4a8f1b4cad0cd4d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Guardian AI Agent"&gt;4c2b85dceb3f6610e4a8f1b4cad0cd2f&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 10:31:13&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=8984b9c5eb148f50e4a8f1b4cad0cd91"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1534882781</payload_hash>
+        <record_name>Guardian AI Agent Self Service Assign Access</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 10:31:17</sys_created_on>
+        <sys_id>51943109eb148f50e4a8f1b4cad0cd77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d90b1fdee0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 10:31:17</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>5194310900148f50b89b78dfe0635b76</update_guid>
+        <update_guid_history>5194310900148f50b89b78dfe0635b76:-1534882781,2094fdc586148f5081dfec1e7cca4d8f:2104954059,7b84bdc50d148f5027377ecc60373c85:941971264,5984f9c5e4148f508eed43022cce2722:1280130434,d584b9c52c148f502c0ac412268827b8:174749222</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 09:32:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>055928affb04476c80d33a528bda2c44</sys_id>
+        <sys_metadata>8984b9c5eb148f50e4a8f1b4cad0cd91</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian AI Agent Self Service Assign Access</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_8984b9c5eb148f50e4a8f1b4cad0cd91</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_8984b9c5eb148f50e4a8f1b4cad0cd91">51943109eb148f50e4a8f1b4cad0cd77</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:32:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

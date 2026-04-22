@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>this tool is used to fetch assigned badges to identity using identity id and return list of assets</description>
+        <input_schema>[{"name":"identity_id","description":"sys id of identity","mandatory":false}]</input_schema>
+        <name>Guardian Fetch User Badge</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var assetList = [];
+    var identityAssetGr = new GlideRecordSecure('x_aleen_snguardian_identity_asset');
+    identityAssetGr.addQuery('identity', inputs.identity_id);
+    identityAssetGr.addQuery('status.code', 'ACTIVE');
+    identityAssetGr.addQuery("provisioning_status.code=success^ORprovisioning_status.codeLIKEupdate-success");
+    identityAssetGr.query();
+    while (identityAssetGr.next()) {
+        var assObj = {};
+        assObj.serial = identityAssetGr.getDisplayValue('asset.serial');
+        assObj.asset = identityAssetGr.getValue('asset');
+        assObj.status = identityAssetGr.getValue('status');
+        assObj.status_value = identityAssetGr.getDisplayValue('status');
+        assObj.type_value = identityAssetGr.getDisplayValue('asset.type.description');
+        assObj.type = identityAssetGr.getValue('status');
+        assObj.id = identityAssetGr.getValue('sys_id');
+        assObj.validTill = identityAssetGr.getValue('valid_to');
+        assetList.push(assObj);
+    }
+    return assetList;
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 10:53:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7d538b9d3bd08f507999faac73e45acb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Guardian Fetch User Badge</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_tool_7d538b9d3bd08f507999faac73e45acb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-20 09:00:40</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"963afbdceb940b50e4a8f1b4cad0cda5"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>823afbdceb940b50e4a8f1b4cad0cd4a</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small_v2</model>
+        <name>Fetch Identity via Logged in user prompt 1</name>
+        <parent/>
+        <prompt>## Role  
+You are an expert in Guardian Users Lookup and Intelligence, specializing in searching, finding, and retrieving accurate user information.
+Your task is to retrieve a cardholder record from Guardian User using the logged-in user's email address for a self-service tool. You will process the input email, query the Guardian Identity table, and return the result in a JSON structured format.
+
+## Context
+ALWAYS use and store the email address of the logged-in user in {{user_email}} as user_email.
+
+Once the email address is identified, you MUST NEVER ask questions, confirmations, or feedback.
+
+VALIDATE user_email, it should be a valid email format.
+
+## Instructions  
+1. **Retrieve the user email**: Extract the logged-in user's email address from the system context provided in {{user_email}}.  
+2. If user_email is invalid email format → Set GUARDIAN USER FOUND: false and prompt the user to enter a valid email address.
+3. Determine if the user is found:
+   If {{GuardianUserLookupSkillScriptTool.output.success}} = true → set the following values 
+     1. GUARDIAN_USER_FOUND: true.
+     2. GUARDIAN_USER_IDENTIFIER:{{GuardianFetchLoggedInIdentityScriptTool.output.sys_id}}.
+     3. GUARDIAN_USER_DATA: {
+                               "full_name":   {{GuardianFetchLoggedInIdentityScriptTool.output.full_name}},
+                               "phone":       {{GuardianFetchLoggedInIdentityScriptTool.output.phone}}, 
+                               "type":        {{GuardianFetchLoggedInIdentityScriptTool.output.type}}, 
+                               "department":  {{GuardianFetchLoggedInIdentityScriptTool.output.department}}, 
+                               "email":       {{GuardianFetchLoggedInIdentityScriptTool.output.email}}, 
+                               "status":      {{GuardianFetchLoggedInIdentityScriptTool.output.status}} 
+                             }.
+	 4. ERROR_MESSAGE: null.
+  If {{GuardianFetchLoggedInIdentityScriptTool.output.success}} = false
+         1. GUARDIAN_USER_FOUND: false.
+         2. ERROR_MESSAGE: Guardian user information not found for the supplied email address {{user_email}}
+	 3. GUARDIAN_USER_IDENTIFIER:null.
+	 4. GUARDIAN_USER_DATA: null.
+4. **Structure the output**: Format the result as a JSON object containing the cardholder details.  
+
+
+## OUTPUT FORMATTING INSTRUCTIONS:
+
+1. STRIP TEXT FROM YOUR RESPONSE THAT IS NOT JSON.
+2. FORMAT THE OUTPUT AS VALID JSON. 
+3. NO SURROUNDING STRINGS OR TEXT APART FROM JSON SHOULD BE PRESENT IN OUTPUT.
+4. THE RESPONSE IN BELOW JSON FORMAT:
+    {"userFound": GUARDIAN_USER_FOUND, "userId": GUARDIAN_USER_IDENTIFIER, "userDetails": GUARDIAN_USER_DATA, "errorMessage": ERROR_MESSAGE}
+5. REMOVE ANY KEY IF VALUE IS EMPTY
+6. REMOVE ANY KEY IF VALUE IS NULL</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-13 12:19:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>563afbdceb940b50e4a8f1b4cad0cd61</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>823afbdceb940b50e4a8f1b4cad0cd4a</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sys_generative_ai_config_563afbdceb940b50e4a8f1b4cad0cd61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-13 15:07:39</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

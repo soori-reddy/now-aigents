@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>1. Get User details from Prompt : email, Full name
+2. show entered details as card format for better UI
+3. check if watchlisted user
+4. ask user if they need to schedule visit if it is watchlisted then get details for visit like visit start date and end date. Provide the output of tool to the chat.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-14 12:54:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fdcbc5f8eb18cb50e4a8f1b4cad0cd40</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_version_fdcbc5f8eb18cb50e4a8f1b4cad0cd40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 08:48:02</sys_updated_on>
+        <target_id>e10b4df4eb18cb50e4a8f1b4cad0cd8c</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

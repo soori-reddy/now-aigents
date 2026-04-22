@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Guardian AI Agent Self Service Register Visit">549f05fe3b144b907999faac73e45a80</agent>
+        <description>This tool helps in fetching identity using Logged in user email and validate that logged in user should have a Guardian Location to make a visit registration.</description>
+        <display_mode>inline</display_mode>
+        <display_output>false</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>549f05fe3b144b907999faac73e45a80</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"user_email","value":"","description":"email of logged in user to validate location","mandatory":false}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Guardian Validate Logged in User Location</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-20 19:48:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>18046d3a3bd44b907999faac73e45a23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Validate Logged in User Location</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_18046d3a3bd44b907999faac73e45a23</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-20 19:48:12</sys_updated_on>
+        <timeout/>
+        <tool display_value="Guardian Validate Logged in User Location">1c046d3a3bd44b907999faac73e45a1d</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

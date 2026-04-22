@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-17 08:47:45</sys_created_on>
+        <sys_id>d010f7213b5803907999faac73e45a54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global.x_aleen_aia_skills.Guardian Self Service Reset Pin Agent.x_aleen_snguardian.employee</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_security_acl display_value="global.x_aleen_aia_skills.Guardian Self Service Reset Pin Agent">9010b7213b5803907999faac73e45a57</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d010f7213b5803907999faac73e45a54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-17 08:47:45</sys_updated_on>
+        <sys_user_role display_value="x_aleen_snguardian.employee" name="x_aleen_snguardian.employee">cfb6b5381b14c6106962fe60cd4bcb60</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>this tool will take logged-in user email  as input, and fetch identity corresponding to the email and will return identity sys_id of the user to the agent as "identity_id".</description>
+        <input_schema>[{"name":"user_email","description":"logged in user email","mandatory":true}]</input_schema>
+        <name>Guardian Fetch User Identity</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    try{
+        var userGr = new GlideRecordSecure('x_aleen_snguardian_identity');
+        userGr.addQuery('email', inputs.user_email);
+        userGr.query();
+        if (userGr.next()) {
+            return userGr.getValue('sys_id');
+        } else {
+            return JSON.stringify({
+                "success": false,
+                "message": "User not found"
+            });
+        }
+    }catch(err){
+        gs.info("Eror in Fetching identity: "+err.message);
+    }
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 10:59:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>578487513b148f507999faac73e45a10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Guardian Fetch User Identity</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_tool_578487513b148f507999faac73e45a10</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 10:59:08</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

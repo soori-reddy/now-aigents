@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent>
+        <description>This tool will perform replace badge scenario. Removing the old badge from user and assigning a new badge from inventory.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>947464383bdc0b507999faac73e45afc</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Replace Badge</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 09:42:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>695921893b18cb507999faac73e45a5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Replace Badge</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_695921893b18cb507999faac73e45a5f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 09:42:08</sys_updated_on>
+        <timeout/>
+        <tool display_value="Guardian AI Agent Badge Assignment subflow">e95961493b18cb507999faac73e45ab8</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</application>
+        <file_path/>
+        <instance_id>2d30a3a4db4f5780cbf6d5b0cf961946</instance_id>
+        <instance_name>aicenter</instance_name>
+        <name>sn_aia_agent_tool_m2m_695921893b18cb507999faac73e45a5f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Guardian Self Service User Helpdesk Agent">947464383bdc0b507999faac73e45afc</agent><description>This tool will perform replace badge scenario. Removing the old badge from user and assigning a new badge from inventory.</description><display_mode>inline</display_mode><display_output>true</display_output><document_status/><entity>sn_aia_agent</entity><entity_id>947464383bdc0b507999faac73e45afc</entity_id><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Replace Badge</name><output_transformation_strategy>none</output_transformation_strategy><post_message/><post_processing_script/><pre_message/><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 09:42:08</sys_created_on><sys_domain>global</sys_domain><sys_id>695921893b18cb507999faac73e45a5f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Replace Badge</sys_name><sys_overrides/><sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package><sys_policy/><sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_695921893b18cb507999faac73e45a5f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 09:42:08</sys_updated_on><timeout/><tool display_value="Guardian AI Agent Badge Assignment subflow">e95961493b18cb507999faac73e45ab8</tool><tool_attributes>{}</tool_attributes><transformation_instructions/><widgets>db0e858eff62b210f465ffffffffff2c</widgets></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-182708583</payload_hash>
+        <record_name>Replace Badge</record_name>
+        <reverted_from/>
+        <source>e3afcf343b84c7107999faac73e45ad2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 09:42:08</sys_created_on>
+        <sys_id>e95921893b18cb507999faac73e45a66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d9084ff190000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 09:42:08</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>a9592189f718cb50fee16ee375a96465</update_guid>
+        <update_guid_history>a9592189f718cb50fee16ee375a96465:-182708583</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Replace Badge">607ae1573b184f907999faac73e45a5e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 09:33:18</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>aa8574c755db4a62bc9981ef6ff4ed11</sys_id>
+        <sys_metadata>695921893b18cb507999faac73e45a5f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Replace Badge</sys_name>
+        <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
+        <sys_scope_delete display_value="">9ec05a3293244f7799d83cc267c72489</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_695921893b18cb507999faac73e45a5f</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_695921893b18cb507999faac73e45a5f">e95921893b18cb507999faac73e45a66</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 09:33:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
