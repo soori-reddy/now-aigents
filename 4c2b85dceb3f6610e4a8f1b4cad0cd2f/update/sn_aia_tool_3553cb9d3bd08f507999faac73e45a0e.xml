@@ -11,7 +11,22 @@
         userGr.addQuery('email', inputs.user_email);
         userGr.query();
         if (userGr.next()) {
-            return userGr.getValue('sys_id');
+            var idenLocationGr = new GlideRecordSecure('x_aleen_snguardian_identity_location');
+            idenLocationGr.addQuery('identity', userGr.getValue('sys_id'));
+            idenLocationGr.query();
+            if(idenLocationGr.next()){
+                return JSON.stringify({
+                    "identityId": userGr.getValue('sys_id'),
+                    "location": idenLocationGr.getValue('location'),
+                    "location_name": idenLocationGr.getDisplayValue('location')
+                });
+            }else{
+                return JSON.stringify({
+                "success": false,
+                "identityId": userGr.getValue('sys_id'),
+                "message": "User Location not found"
+            });
+            }
         } else {
             return JSON.stringify({
                 "success": false,
@@ -27,7 +42,7 @@
         <sys_created_on>2026-04-16 10:53:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>3553cb9d3bd08f507999faac73e45a0e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Guardian Fetch User Identity</sys_name>
         <sys_overrides/>
         <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
@@ -35,7 +50,7 @@
         <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
         <sys_update_name>sn_aia_tool_3553cb9d3bd08f507999faac73e45a0e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-16 10:53:51</sys_updated_on>
+        <sys_updated_on>2026-04-23 14:36:28</sys_updated_on>
         <target_document/>
         <target_document_table>sn_aia_tool</target_document_table>
         <type>script</type>

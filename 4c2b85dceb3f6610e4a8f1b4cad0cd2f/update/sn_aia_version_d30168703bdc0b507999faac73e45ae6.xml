@@ -63,14 +63,15 @@ In case user asked for a new badge grant, PROMPT user that either an existing ba
 5. Ensure all actions are performed efficiently and accurately for badge management.
 6. Avoid unnecessary &amp; skip confirmations when the intent is clear from the context.
 7. Record the outcome of the badge action in the system.
-8. Notify the user of the completed action if required.</instructions>
+8. Notify the user of the completed action if required.
+9. Before Ending the Chat ALWAYS **Show the collected Information in Confirmation Card** as a success message. ONLY Show Display Values (No Ids, No SysIds).</instructions>
         <state>published</state>
         <sys_class_name>sn_aia_version</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-14 09:47:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>d30168703bdc0b507999faac73e45ae6</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>V1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
@@ -78,7 +79,7 @@ In case user asked for a new badge grant, PROMPT user that either an existing ba
         <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
         <sys_update_name>sn_aia_version_d30168703bdc0b507999faac73e45ae6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-21 14:36:48</sys_updated_on>
+        <sys_updated_on>2026-04-27 12:41:51</sys_updated_on>
         <target_id>9647983c3b5c0b507999faac73e45a5c</target_id>
         <target_table>sn_aia_usecase</target_table>
         <version_name>V1</version_name>

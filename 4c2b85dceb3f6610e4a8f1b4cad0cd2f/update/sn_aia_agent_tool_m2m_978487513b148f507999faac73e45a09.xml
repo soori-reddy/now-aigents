@@ -2,14 +2,14 @@
     <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="Guardian Self Service Assign Access Agent">477383dd3bd08f507999faac73e45a02</agent>
-        <description>this tool assist in finding all access levels allocated in the provided location name with input and also return location sys_id for given location name.</description>
+        <description>this tool assist in finding all access levels allocated in the provided location name with input and also return location sys_id for given location name. If lobby name is present and is in given location, then just fetch that lobby record directly.</description>
         <display_mode>inline</display_mode>
         <display_output>false</display_output>
         <document_status/>
         <entity>sn_aia_agent</entity>
         <entity_id>477383dd3bd08f507999faac73e45a02</entity_id>
         <execution_mode>autopilot</execution_mode>
-        <inputs>[{"name":"location_name","value":"","description":"name of location specified by user","mandatory":false}]</inputs>
+        <inputs>[{"name":"location_name","value":"","description":"name of location specified by user","mandatory":false},{"name":"lobby_name","value":"","description":"name of lobby to access directly if mentioned by user","mandatory":false}]</inputs>
         <max_auto_executions>10</max_auto_executions>
         <name>Guardian Fetch Access from Location</name>
         <output_transformation_strategy>none</output_transformation_strategy>
@@ -25,7 +25,7 @@
         <sys_created_on>2026-04-16 10:59:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>978487513b148f507999faac73e45a09</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Guardian Fetch Access from Location</sys_name>
         <sys_overrides/>
         <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
@@ -33,11 +33,11 @@
         <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
         <sys_update_name>sn_aia_agent_tool_m2m_978487513b148f507999faac73e45a09</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-16 10:59:08</sys_updated_on>
+        <sys_updated_on>2026-04-23 13:58:33</sys_updated_on>
         <timeout/>
         <tool display_value="Guardian Fetch Access from Location">d38487dd3bd08f507999faac73e45aad</tool>
         <tool_attributes>{}</tool_attributes>
-        <transformation_instructions/>
+        <transformation_instructions>undefined</transformation_instructions>
         <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
     </sn_aia_agent_tool_m2m>
 </record_update>

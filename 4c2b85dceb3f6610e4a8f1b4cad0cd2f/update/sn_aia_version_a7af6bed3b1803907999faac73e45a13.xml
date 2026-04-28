@@ -41,7 +41,12 @@ This PIN should be not be exposed in chat, it should be encrypted when user sent
 - selected_badge
 - PIN (4 digit number given by user)
 
-7. Final Tool Call:
+7. ALWAYS take a confirmation from user to proceed with given information:
+    Badge Serial: SERIAL of "selected_badge"
+    PIN: pin given by user
+Show Yes/No buttons to take confirmation from user ALWAYS.
+
+8. Final Tool Call:
 → Trigger the **Reset PIN** subflow tool
 Call this Reset PIN Tool for resetting a Door PIN with new PIN so that user can have its updated PIN for the corresponding badge to the door. The inputs passed to this tool are user_sys_id as the stored identityId returned from **Guardian Fetch User Identity** Tool, record_id as the value of selected badge card by user (value of *selected asset object* key "id") and pin value given by user.
 
@@ -56,6 +61,8 @@ Then Stop the agent after running tool.
 
 ## OUTPUT STYLE:
 
+* Before Ending the Chat ALWAYS **Show the collected Information in Confirmation Card** as a success message on receiving success from **Reset PIN** tool very politely . ONLY Show Display Values (No Ids, No SysIds).
+
 Specify user that Resetting your door PIN successfully. Then End the Chat.</instructions>
         <state>published</state>
         <sys_class_name>sn_aia_version</sys_class_name>
@@ -63,7 +70,7 @@ Specify user that Resetting your door PIN successfully. Then End the Chat.</inst
         <sys_created_on>2026-04-17 08:46:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>a7af6bed3b1803907999faac73e45a13</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>V1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Guardian AI Agent" source="x_aleen_aia_skills">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_package>
@@ -71,7 +78,7 @@ Specify user that Resetting your door PIN successfully. Then End the Chat.</inst
         <sys_scope display_value="Guardian AI Agent">4c2b85dceb3f6610e4a8f1b4cad0cd2f</sys_scope>
         <sys_update_name>sn_aia_version_a7af6bed3b1803907999faac73e45a13</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-22 09:00:22</sys_updated_on>
+        <sys_updated_on>2026-04-27 18:43:32</sys_updated_on>
         <target_id>091fef6d3b1803907999faac73e45a9b</target_id>
         <target_table>sn_aia_agent</target_table>
         <version_name>V1</version_name>
